@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+    {
+    int angle1, angle2, angle3, sum;
+
+  
+    printf("Enter first angle: ");
+    scanf("%d", &angle1);
+
+    printf("Enter second angle: ");
+    scanf("%d", &angle2);
+
+    printf("Enter third angle: ");
+    scanf("%d", &angle3);
+
+    
+    sum = angle1 + angle2 + angle3;
+
+   
+    if(sum == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) 
+        {
+        printf("Valid triangle\n");
+
+       
+        if(angle1 == 90 || angle2 == 90 || angle3 == 90) 
+        {
+            printf("It is a Right-angled triangle.\n");
+        } else if(angle1 < 90 && angle2 < 90 && angle3 < 90) 
+        {
+            printf("It is an Acute-angled triangle.\n");
+        } else
+        {
+            printf("It is an Obtuse-angled triangle.\n");
+        }
