@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int basic_salary, hra, da, gross_salary;
+
+   
+    printf("Enter Basic Salary: ");
+    scanf("%d", &basic_salary);
+
+  
+    hra = (20 * basic_salary) / 100;  // 20% of basic
+    da  = (80 * basic_salary) / 100;  // 80% of basic
+
+    
+    gross_salary = basic_salary + hra + da;
+
+
+    printf("\n--- Salary Details ---\n");
+    printf("Basic Salary = %d\n", basic_salary);
+    printf("HRA (20%%)    = %d\n", hra);
+    printf("DA (80%%)     = %d\n", da);
+    printf("Gross Salary = %d\n", gross_salary);
+
+    return 0;
+}
